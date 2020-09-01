@@ -104,7 +104,7 @@ AGM.Modelling.GetLoops = modellingGetLoops;
 AGM.Modelling.GetLoopType = modellingGetLoopType;
 //AGM.Modelling.ImportFile( filepath, logpath )
 AGM.Modelling.ImportFile = modellingImportFile;
-//AGM.Modelling.ExportFile( filepath, unit, logpath )
+//AGM.Modelling.ExportFile( filepath, unit, logpath, author, organization)
 AGM.Modelling.ExportFile = modellingExportFile;
 //AGM.Modelling.CreateEdgeByLaw( parameters, equation_x, equation_y, equation_z, start, end, *.exp,  out WireBody )
 AGM.Modelling.CreateEdgeByLaw = modellingCreateEdgeByLaw;
