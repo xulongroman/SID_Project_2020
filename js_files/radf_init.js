@@ -151,7 +151,7 @@ AGM.Modelling.SplitBody = modellingSplitBody;
 AGM.Modelling.ReflectBodies = modellingReflectBody;
 //AGM.Modelling.ConvertFaceToProfile( face, out SheetObject);
 AGM.Modelling.ConvertFaceToProfile = modellingConvertFaceToProfile;
-//AGM.Modelling.CreateTextSheet( text, fontname, fontsize, xlength, ylength, target_origin, target_x_axis, target_y_axis, wrap, out ModelObject, )
+//AGM.Modelling.CreateTextSheet( text, fontname, fontsize, xlength, ylength, target_origin, target_x_axis, target_y_axis, wrap, out ModelObject )
 AGM.Modelling.CreateTextSheet = modellingCreateTextSheet;
 //AGM.Modelling.SweepByDist( in\out profile, distance, bothside = false, draftangle = 0 )
 AGM.Modelling.SweepByDist = modellingSweepByDist;
@@ -159,15 +159,25 @@ AGM.Modelling.SweepByDist = modellingSweepByDist;
 AGM.Modelling.IntersectHollowCylinder = modellingIntersectHollowCylinder;
 /**************************[NameSpace "AGM.Sketcher"]**************************/
 AGM.Sketcher = {};
+//AGM.Sketcher.CreateDocument(in\out sketch_doc)
 AGM.Sketcher.CreateDocument = sketchCreateDocument;
+//AGM.Sketcher.CreateRect(firstX, firstY, secondX, secondY, [boolMode = true])
 AGM.Sketcher.CreateRect = sketchCreateRect;
+//AGM.Sketcher.Extrude(in sketch, height, [removeFlag = false], [reverseFlag = false], [bothsideFlag = false], [angle = 0])
 AGM.Sketcher.Extrude = sketchExtrude;
+//AGM.Sketcher.Revolve(in sketch, [removeFlag = false], [start_angle = 0], [end_angle = 360], [reverseFlag = false])
 AGM.Sketcher.Revolve = sketchRevolve;
+//AGM.Sketcher.OpenSketch(in sketch)
 AGM.Sketcher.OpenSketch = sketchOpen;
+//AGM.Sketcher.CreateRect(firstX, firstY, secondX, secondY, [boolMode = true])
 AGM.Sketcher.CreateCircle = sketchCreateCircle;
+//AGM.Sketcher.CloseSketch()
 AGM.Sketcher.CloseSketch = sketchClose;
+//AGM.Sketcher.CreateSketch(in owner_doc, orgx, orgy, orgz, uposx, uposy, uposz, vposx, vposy, vposz, in\out new_sketch)
 AGM.Sketcher.CreateSketch = sketchCreateSketch;
+//AGM.Sketcher.CreatePolygon(pos_array, [boolMode = true])
 AGM.Sketcher.CreatePolygon = sketchCreatePolygon;
+//AGM.Sketcher.CreateEllipse(centerX, centerY, major_VecX, major_VecY, major_raidus, minor_radius, [boolMode = true])
 AGM.Sketcher.CreateEllipse = sketchCreateEllipse;
 AGM.Sketcher.CreateTan2Circles = sketchCreateTan2Circles;
 AGM.Sketcher.CreateArc = sketchCreateArc;
@@ -175,7 +185,9 @@ AGM.Sketcher.CreateArc3Points = sketchCreateArc3Points;
 AGM.Sketcher.CreateLine = sketchCreateLine;
 AGM.Sketcher.CreateSpline = sketchCreateSpline;
 AGM.Sketcher.CreatePolyline = sketchCreatePolyline;
+//AGM.Sketcher.CreateCenterLine(startX, startY, endX, endY)
 AGM.Sketcher.CreateCenterLine = sketchCreateCenterLine;
+//AGM.Sketcher.FixModel()
 AGM.Sketcher.FixModel = sketchFixModel;
 AGM.Sketcher.ConvertToWire = sketchConvertToWire;
 AGM.Sketcher.ConvertToPath = sketchConvertToPath;
