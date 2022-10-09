@@ -157,6 +157,8 @@ AGM.Modelling.CreateTextSheet = modellingCreateTextSheet;
 AGM.Modelling.SweepByDist = modellingSweepByDist;
 //AGM.Modelling.IntersectHollowCylinder( in\out Modelbody, bottom_position, top_position, max_radius, min_radius )
 AGM.Modelling.IntersectHollowCylinder = modellingIntersectHollowCylinder;
+//AGM.Modelling.NonUniformScaleBody( in\out Modelbody, xscale, yscale, zscale )
+AGM.Modelling.NonUniformScaleBody = modellingNonUniformScaleBody;
 /**************************[NameSpace "AGM.Sketcher"]**************************/
 AGM.Sketcher = {};
 AGM.Sketcher.CreateDocument = sketchCreateDocument;

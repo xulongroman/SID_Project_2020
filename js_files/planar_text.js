@@ -7,6 +7,7 @@ var origin = AGM.Position( 0, 3, 3 );
 var x_axis = AGM.Vector( 1, 0, 0 );
 var y_axis = AGM.Vector( 0, 1, 0 );
 var textSheet = AGM.Object();
-AGM.Modelling.CreateTextSheet( "7", "Arial", 20, 4, 1, origin, x_axis, y_axis, false, textSheet );
+AGM.Modelling.CreateTextSheet( "R", "Arial", 20, 4, 1, origin, x_axis, y_axis, true, textSheet );
+//AGM.Modelling.CreateTextSheet( "R", "Arial", 20, 4, 1, origin, x_axis, y_axis, textSheet );
 AGM.Modelling.SweepByDist(textSheet, -0.1, false, 10);
 AGM.Modelling.BoolSubtract(Block, textSheet);
